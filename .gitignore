@@ -1,5 +1,9 @@
 .vscode/*
 debuffVenv/
 *.code-workspace
+dist/
+build/
+__pycache__/
+main.spec
 # Local History for Visual Studio Code
 .history/

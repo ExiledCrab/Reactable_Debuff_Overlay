@@ -25,4 +25,4 @@ If you find any terrible bugs or have ways of improving this, please open an iss
 Icons displayed are from [icons8](https://icons8.com)
 
 ## License
-[MIT](https://choosealicense.com/licenses/mit/)
+No license ATM
