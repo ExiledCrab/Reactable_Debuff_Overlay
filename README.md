@@ -13,7 +13,7 @@ If that sounds like you, then this tool is for you!
 
 ## How Does It Look?
 
-If you have none of these 5 debuffs (bleed, freeze, ignite, poison, shock) then you see nothing! Here's an image with all of them showing as if you were affected by them
+If you have none of these 5 debuffs (ignite, freeze, shock, bleed, poison) then you see nothing! Here's an image with all of them showing as if you were affected by them
 
 ![alt text](https://github.com/ExiledCrab/Reactable_Debuff_Overlay/blob/master/example.png?raw=true)
 
