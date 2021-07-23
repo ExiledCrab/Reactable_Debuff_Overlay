@@ -45,6 +45,11 @@ Every update the overlay does, it grabs your PoE screen as a screenshot, then us
 Do you love me for this? Want to support me?
 Then just say hi or thanks on twitter [@ExiledCrab](https://twitter.com/ExiledCrab) and tell your fellow exiles about this tool
 
+If you feel like going above & beyond to tip me beer/snacks money:
+- Bitcoin Wallet: bc1qat7uvk2hz7g5y2fmfwhrl99zxm0v6pda3pap8h
+- ETH Wallet: 0x1E2Ca68ee90003bDbeFe8a3176C280d0F066CFA0
+
+
 ## Contributing
 If you find any terrible bugs or have ways of improving this, please open an issue and provide as much info as you can about what happened. (Screenshots are a huge bonus) 
 
