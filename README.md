@@ -17,6 +17,18 @@ If you have none of these 5 debuffs (ignite, freeze, shock, bleed, poison) then 
 
 ![alt text](https://github.com/ExiledCrab/Reactable_Debuff_Overlay/blob/master/example.png?raw=true)
 
+## How do I use it?
+Head over to the [releases page](https://github.com/ExiledCrab/Reactable_Debuff_Overlay/releases) and grab the .exe from the newest version. Thats it!
+
+When you run the .exe you'll see that it shows up running in the taskbar. You can just right click to close it whenever you dont need it open anymore.
+
+## I don't want an exe, I wanna run the source code myself for safety
+- Clone this repo
+- setup your .venv
+- pip install -r requirements.txt
+
+and youre ready to just run main.py
+
 ## Current Caveats
 * Windows only
 * You MUST play PoE in `windowed` or `windowed fullscreen` graphics mode
@@ -24,6 +36,10 @@ If you have none of these 5 debuffs (ignite, freeze, shock, bleed, poison) then 
 * Current performance isn't great. It updates about 7-8 times a second and your FPS takes a bit of a hit. (My potato machine is still above 100fps on avg but YMMV)
 * No customization unless you like programming, another thing that I want to add in the future
 * This was made in a couple hours, it shows lul
+
+## Support Me
+Do you love me for this? Want to support me?
+Then just say hi or thanks on twitter [@ExiledCrab](https://twitter.com/ExiledCrab) and tell your fellow exiles about this tool
 
 ## Contributing
 If you find any terrible bugs or have ways of improving this, please open an issue and provide as much info as you can about what happened. (Screenshots are a huge bonus) 
