@@ -39,7 +39,7 @@ and youre ready to just run main.py
 
 ## This is witchcraft, how does it work?
 
-Every update the overlay does, it grabs your PoE screen as a screenshot, then uses opencv to try and 'find' the debuff icons on your screen. After that im using pygame to draw an 'invisible' window overtop of your poe window (why it requires you to NOT use fullscreen) and if a debuff was found on the current update, it draws a small debff icon near your character. 
+Every update the overlay does, it grabs your PoE screen as a screenshot, then uses opencv to try and 'find' the debuff icons on your screen. After that im using pygame to draw an 'invisible' window overtop of your poe window (why it requires you to NOT use fullscreen) and if a debuff was found on the current update, it draws a small debff icon in the invisible window near where your character is. 
 
 ## Support Me
 Do you love me for this? Want to support me?
