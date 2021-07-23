@@ -18,6 +18,7 @@ If you have none of these 5 debuffs (ignite, freeze, shock, bleed, poison) then 
 ![alt text](https://github.com/ExiledCrab/Reactable_Debuff_Overlay/blob/master/example.png?raw=true)
 
 ## Current Caveats
+* Windows only
 * You MUST play PoE in `windowed` or `windowed fullscreen` graphics mode
 * only tested to work on 1920x1080 resolution (what i play at, scaling is next thing that I'll be building out)
 * Current performance isn't great. It updates about 7-8 times a second and your FPS takes a bit of a hit. (My potato machine is still above 100fps on avg but YMMV)
