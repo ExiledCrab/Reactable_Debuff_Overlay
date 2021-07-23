@@ -1,11 +1,19 @@
 import cv2 as cv
 import numpy as np
-import win32gui, win32api, win32con, win32ui
 import os
 import pygame
+import sys
 import time
+import win32gui, win32api, win32con, win32ui
 
-os.chdir(os.path.dirname(os.path.abspath(__file__)))
+# If the code is frozen, use this path:
+if getattr(sys, 'frozen', False):
+    CurrentPath = sys._MEIPASS
+# If it's not use the path we're on now
+else:
+    CurrentPath = os.path.dirname(__file__)
+
+imgFolderPath = os.path.join(CurrentPath, 'images')
 
 class GameWindow:
     def __init__(self, windowClass):
@@ -68,6 +76,11 @@ class OverlayWindow:
         }
         self.screen = pygame.display.set_mode(size=(w, h), depth=1, flags=pygame.NOFRAME )
         # | pygame.FULLSCREEN
+
+        pygame.display.set_caption('Reactable Debuff Overlay')
+        programIcon = pygame.image.load(os.path.join(imgFolderPath, "display_icon_poison.png"))
+        pygame.display.set_icon(programIcon)
+
         self.pink = (255, 192, 203)  # Transparency color
         # Set window transparency color
         self.hwnd = pygame.display.get_wm_info()["window"]
@@ -77,31 +90,31 @@ class OverlayWindow:
         self.icons = {
             'bleed': {
                 'status': False,
-                'img': pygame.image.load("display_icon_bleed.png"),
+                'img': pygame.image.load(os.path.join(imgFolderPath, "display_icon_bleed.png")),
                 'x_offset': 4,
                 'y_offset': 0
             },
             'freeze': {
                 'status': False,
-                'img': pygame.image.load("display_icon_freeze.png"),
+                'img': pygame.image.load(os.path.join(imgFolderPath, "display_icon_freeze.png")),
                 'x_offset': -40,
                 'y_offset': 0
             },
             'ignite': {
                 'status': False,
-                'img': pygame.image.load("display_icon_ignite.png"),
+                'img': pygame.image.load(os.path.join(imgFolderPath, "display_icon_ignite.png")),
                 'x_offset': -64,
                 'y_offset': 0
             },
             'poison': {
                 'status': False,
-                'img': pygame.image.load("display_icon_poison.png"),
+                'img': pygame.image.load(os.path.join(imgFolderPath, "display_icon_poison.png")),
                 'x_offset': 32,
                 'y_offset': 0
             },
             'shock': {
                 'status': False,
-                'img': pygame.image.load("display_icon_shock.png"),
+                'img': pygame.image.load(os.path.join(imgFolderPath, "display_icon_shock.png")),
                 'x_offset': -16,
                 'y_offset': 0
             },
@@ -140,7 +153,7 @@ class BuffIcon:
      def __init__(self, name, path_str, buff_matcher) -> None:
          self.name = name
          self.path = path_str
-         self.img = cv.imread(path_str, cv.IMREAD_UNCHANGED)
+         self.img = cv.imread(os.path.join(imgFolderPath, path_str), cv.IMREAD_UNCHANGED)
         #  self.img = scale_img(self.img, 50)
          self.key_points, self.description = buff_matcher.detector.detectAndCompute(self.img,None) 
          pass
@@ -205,7 +218,7 @@ while gaming:
         
         good_amt = len(good)
 
-        print(f'matches: {good_amt} of {len(buff.key_points)}')
+        # print(f'matches: {good_amt} of {len(buff.key_points)}')
         
         if(good_amt >= 4):
             if buff.name == 'sand': # the debug aura
