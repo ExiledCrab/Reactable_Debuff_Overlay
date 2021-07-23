@@ -11,6 +11,11 @@ If that sounds like you, then this tool is for you!
 3. This tool will NEVER ALLOW ANY TYPE OF AUTOMATION OF GAME MECHANICS
 4. This tool will NEVER PLAY ANY ASPECT OF THE GAME FOR YOU
 
+## How Does It Look?
+
+If you have none of these 5 debuffs (bleed, freeze, ignite, poison, shock) then you see nothing! Here's an image with all of them showing as if you were affected by them
+![alt text](https://github.com/ExiledCrab/Reactable_Debuff_Overlay/blob/master/example.png?raw=true)
+
 ## Current Caveats
 * You MUST play PoE in `windowed` or `windowed fullscreen` graphics mode
 * only tested to work on 1920x1080 resolution (what i play at, scaling is next thing that I'll be building out)
